@@ -1,0 +1,285 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"text-",
+				"text-align\tproperty"
+			],
+			[
+				"cen",
+				"container-fluid"
+			],
+			[
+				"fl",
+				"img-fluid"
+			],
+			[
+				"tex",
+				"text-center"
+			],
+			[
+				"ro",
+				"rounded-0"
+			],
+			[
+				"img",
+				"img-fluid"
+			],
+			[
+				"chine",
+				"Chine"
+			],
+			[
+				"back",
+				"background-color\tproperty"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"text",
+				"text-shadow\tproperty"
+			],
+			[
+				"from-",
+				"form-control"
+			],
+			[
+				"fr",
+				"form-control"
+			],
+			[
+				"form",
+				"form-control"
+			],
+			[
+				"for",
+				"form-control"
+			],
+			[
+				"opt",
+				"option\tTag"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"al",
+				"alt\tAttr"
+			],
+			[
+				"te",
+				"text-align\tproperty"
+			],
+			[
+				"col",
+				"color\tproperty"
+			],
+			[
+				"fon",
+				"font-size-adjust\tproperty"
+			],
+			[
+				"font",
+				"font-family\tproperty"
+			],
+			[
+				"ti",
+				"title\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/goupi/Dropbox/Les-Zones-Bleues/VideosReliees.html",
+		"/C/Users/goupi/Dropbox/Les-Zones-Bleues/Carriere.html",
+		"/C/Users/goupi/Dropbox/Les-Zones-Bleues/Contact.html",
+		"/C/Users/goupi/Dropbox/Les-Zones-Bleues/problematique.html",
+		"/C/Users/goupi/Dropbox/Les-Zones-Bleues/index.html",
+		"/C/Users/goupi/Dropbox/Les-Zones-Bleues/etudescientifique.html",
+		"/C/Users/goupi/Dropbox/Les-Zones-Bleues/css/main.css",
+		"/C/Users/goupi/Downloads/20180907211846_semaine3.html",
+		"/C/Users/goupi/Downloads/20180907211846_semaine3.zip",
+		"/C/Users/goupi/Desktop/Technique Session 1/Prog/semaine3",
+		"/C/Users/goupi/Desktop/Technique Session 1/Prog/index.html",
+		"/C/Users/goupi/Dropbox/Les-Zones-Bleues/lisez-moi.txt.txt",
+		"/C/Users/goupi/Desktop/exercice2felixgoupil/index.html",
+		"/C/Users/goupi/Desktop/Les-Zones-Bleues/css/main.css",
+		"/C/Users/goupi/Desktop/Les-Zones-Bleues/problematique.html",
+		"/C/Users/goupi/Desktop/Les-Zones-Bleues/index.html",
+		"/C/Users/goupi/Desktop/Technique Session 1/Prog/ex5formulairefelixgoupil.html",
+		"/C/Users/goupi/Desktop/Technique Session 1/Prog/semaine4/css/style.css",
+		"/C/Users/goupi/Downloads/Correction_Semaine_2_-_HTML_1638021 (2).zip",
+		"/C/Users/goupi/Desktop/TP 1 prog web/problematique.html",
+		"/C/Users/goupi/Desktop/TP 1 prog web/index.html",
+		"/C/Users/goupi/Desktop/TP 1 prog web/css/main.css",
+		"/C/Users/goupi/Desktop/semaine3felixgoupil/semaine3.html",
+		"/C/Users/goupi/Desktop/Technique Session 1/Prog/semaine4/exemple4.html",
+		"/C/Users/goupi/Desktop/TP 1 prog web/la-problématique",
+		"/C/Users/goupi/Downloads/Semaine-1-web1.zip",
+		"/C/Users/goupi/Desktop/TP 1 prog web/404.html",
+		"/C/Users/goupi/Desktop/exercice2felixgoupil/reference.html",
+		"/C/Users/goupi/Desktop/www-avance/css/main.css",
+		"/C/Users/goupi/Desktop/indextest.html",
+		"/C/Users/goupi/Desktop/www-avance/404.html"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"center",
+			"body"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Carriere.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

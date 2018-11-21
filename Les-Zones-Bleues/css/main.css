@@ -1,0 +1,75 @@
+/*!
+ * le code CSS pour votre projet
+ */
+ html {
+    height: 100%;
+}
+ body 
+ {
+	background-image: linear-gradient(180deg,white,blue);
+	background-repeat:no-repeat; 
+	background-attachment: fixed;
+	
+ }
+ h1
+ {
+	text-shadow:.03em .03em .03em black
+ }
+
+.nav-item
+{
+	color:black;
+}
+#navbar-brand{
+	color: #5a5a5a;
+	text-shadow: 3px 3px 8px rgba(150, 150, 150, 0.79);
+}
+
+p{
+	text-align: justify;
+}
+.encadre
+{
+	background-color:#6f6b6b47;
+}
+.rounded-0
+{
+	border: 1px solid;
+    box-shadow: 5px 10px #888888;
+}
+.rounded-circle
+{
+	border: 1px solid;
+    box-shadow: 5px 10px #888888;
+}
+.rounded
+{
+	border: 1px solid;
+    box-shadow: 5px 10px #888888;
+}
+	
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: white;
+    text-align:center;
+    opacity: 0.8;
+    transition:0.2s;
+}
+.footer:hover 
+{
+	opacity:1;
+}
+.text-footer 
+{
+	color:black;
+	text-align: center;
+}
+
+
+
+
+
+
