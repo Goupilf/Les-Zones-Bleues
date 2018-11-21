@@ -98,6 +98,8 @@ function init()
   document.getElementById("buttonChangeTxt").addEventListener("click", majTexteQuestion, false);
   document.getElementById("buttonChangeTxt").addEventListener("click", majTexteChoix, false);
   document.getElementById("boiteChoix").addEventListener("click",majNoQuestionCourant,false);
+  document.getElementById("boiteChoix").addEventListener("click",majTexteChoix,false);
+  document.getElementById("boiteChoix").addEventListener("click",majTexteQuestion,false);
 }
 
 window.onload = init;
