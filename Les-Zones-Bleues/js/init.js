@@ -63,7 +63,7 @@ var tableauQuestions =
   ["Quelle est l'origine du nom « zone bleue »?",3,"https://fr.wikipedia.org/wiki/Zone_bleue_(long%C3%A9vit%C3%A9)","Canadienne","Chinoise","Italienne","Française"],
   ["Qu'est-ce que le climat de ces zones bleues a en commun ? Ce sont des zones :",3,"https://fr.wikipedia.org/wiki/Zone_bleue_(long%C3%A9vit%C3%A9)","sec et aride","humide et tropical","ensoleillée et aérées","froid et sec"],
   ["Parmi ces leçons de longévité, laquelle est fausse?",4,"https://www.lesoleil.com/chroniques/marc-allard/les-zones-bleues-915f84a881b8435985b606617670fa2c","Bougez naturellement","Buvez du vin (modérément)","Boudez la viande et les produits raffinés","Dormir moins de 8h"],
-  ["Jusqu'à combien de fois les chances de franchir le cap des 100 ans dans une zone bleue sont-elle supérieures à la moyenne en Amérique du Nord?",1,"10","100","2","5"],
+  ["Jusqu'à combien de fois les chances de franchir le cap des 100 ans dans une zone bleue sont-elle supérieures à la moyenne en Amérique du Nord?",1,"https://fr.wikipedia.org/wiki/Zone_bleue_(long%C3%A9vit%C3%A9)","10","100","2","5"],
   ["Les végétaux représentent quel pourcentage de l’alimentation de ces centenaires?",1,"https://mondenaturel.ca/les-principes-de-longevite-des-zones-bleues/","95%","80%","50%","100%"],
   ["Quel produit ne fait pas parti des aliments des Zones bleues?",4,"https://www.selection.ca/sante/maigrir/le-regime-des-zones-bleues-le-secret-de-la-longevite/","Chocolat noir","le poisson","le café","bière"],
   ["Dans les zones bleues, on consomme seulement _____ calories, comparé à la moyenne mondiale de 2358.",2,"https://www.masantenaturelle.com/chroniques/chroniques2/centenaires_zone-bleue.php","2000","1900","1500","2200"],
