@@ -147,7 +147,12 @@ function majTexteQuestion(noQuestion)
  */
 function majNoQuestionCourant()
 {	
-	//ajouter votre code ici
+	if (questionCourante < (MAX_QUESTIONS))
+	{ 
+		questionCourante++;
+	}
+	document.getElementById("noQuestionCourante").textContent = questionCourante;
+
 }
 
 /**
