@@ -95,8 +95,9 @@ function choisirQuestions()
  */
 function init() 
 {
-  document.getElementById("buttonChangeTxt").addEventListener("click", changeText, false);
-
+  document.getElementById("buttonChangeTxt").addEventListener("click", majTexteQuestion, false);
+  document.getElementById("buttonChangeTxt").addEventListener("click", majTexteChoix, false);
+  document.getElementById("boiteChoix").addEventListener("click",majNoQuestionCourant,false);
 }
 
 window.onload = init;
