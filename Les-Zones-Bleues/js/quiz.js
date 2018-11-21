@@ -24,10 +24,7 @@ function validerQuestion(noQuestion, choixUtilisateur)
 
 
 
-function changeText()
-{
-	document.getElementById("texteQuestion").textContent = tableauQuestions[questionCourante][0];
-}
+
 /**
  * @name ajouterPoint
  * @description Ajoute un point au total des points.
