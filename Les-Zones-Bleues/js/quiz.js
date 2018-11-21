@@ -12,20 +12,21 @@
  * @param {*} choixUtilisateur choix fait par l'utilisateur
  * @returns true si la réponse choisie est bonne, sinon false
  */
- var isValider = true;
+ 
 function validerQuestion(noQuestion, choixUtilisateur)
-{
-	if(choixUtilisateur == tableauQuestion[noQuestion][2])
+{	
+	 var isValider = true;
+	if(choixUtilisateur == tableauQuestions[questionCourante][2])
 	{
-
+		isValider = true;
 	}
 }
 
-var noQuestion = 0;
+
 
 function changeText()
 {
-	document.getElementById("texteQuestion").textContent = tableauQuestions[0][0];
+	document.getElementById("texteQuestion").textContent = tableauQuestions[questionCourante][0];
 }
 /**
  * @name ajouterPoint
@@ -123,7 +124,7 @@ function majTotalQuestion()
  */
 function majTexteChoix(noQuestion)
 {	
-	document.getElementById('texteQuestion').textContent(tableauQuestion[0][0]);
+	document.getElementById('texteQuestion').textContent = tableauQuestions[questionCourante][0];
 }
 
 /**
