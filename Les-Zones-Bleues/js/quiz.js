@@ -124,7 +124,10 @@ function majTotalQuestion()
  */
 function majTexteChoix(noQuestion)
 {	
-	document.getElementById('texteQuestion').textContent = tableauQuestions[questionCourante][0];
+	document.getElementById('txtChoix0').textContent = tableauQuestions[questionCourante][3];
+	document.getElementById('txtChoix1').textContent = tableauQuestions[questionCourante][4];
+	document.getElementById('txtChoix2').textContent = tableauQuestions[questionCourante][5];
+	document.getElementById('txtChoix3').textContent = tableauQuestions[questionCourante][6];
 }
 
 /**
@@ -134,7 +137,7 @@ function majTexteChoix(noQuestion)
  */
 function majTexteQuestion(noQuestion)
 {
-	//ajouter votre code ici
+	document.getElementById('texteQuestion').textContent = tableauQuestions[questionCourante][0];
 
 	$('#texteQuestion').removeClass('animated bounceInLeft delay-1s');
 	$('#texteQuestion').removeClass('animated wobble delay-2s');
