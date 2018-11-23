@@ -32,7 +32,7 @@ const POS_REPONSE = 0;
   * @type {number}
   * @description Index de la question présentement affichée.
   */
-var questionCourante = 0;
+var questionCourante = 1;
 
 /**
   * @global
