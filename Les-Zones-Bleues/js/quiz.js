@@ -138,6 +138,7 @@ function majTexteChoix(noQuestion)
 function majTexteQuestion(noQuestion)
 {
 	document.getElementById('texteQuestion').textContent = tableauQuestions[questionCourante][0];
+	document.getElementById("container").style.display = "block";
 
 	$('#texteQuestion').removeClass('animated bounceInLeft delay-1s');
 	$('#texteQuestion').removeClass('animated wobble delay-2s');
