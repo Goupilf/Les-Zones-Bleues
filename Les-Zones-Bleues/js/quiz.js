@@ -52,7 +52,10 @@ function obtenirPointage()
  */
 function estFinPartie(questionCourante)
 {
-	//ajouter votre code ici
+	var finPartie = false;
+
+if(questionCourante == MAX_QUESTION){
+finDePartie = true;
 }
 
 /**
@@ -61,7 +64,7 @@ function estFinPartie(questionCourante)
  */
 function chargerQuestionSuivante()
 {
-	//ajouter votre code ici
+	
 }
 
 /**
