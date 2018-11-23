@@ -31,7 +31,7 @@ function validerQuestion(noQuestion, choixUtilisateur)
  */
 function ajouterPoint()
 {
-	pointage++;
+	totalpointage++;
 }
 
 /**
@@ -41,7 +41,7 @@ function ajouterPoint()
  */
 function obtenirPointage()
 {
-	return pointage;
+	return totalpointage;
 }
 
 /**
