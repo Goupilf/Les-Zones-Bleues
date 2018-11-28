@@ -76,7 +76,7 @@ var tableauQuestions =
   * @name questionsQuiz
   * @type {object}
   * @description Liste des questions posées dans le quiz.
-  * @example [["Quel est le meilleur aliment pour votre santé?", 1, "https://www.google.ca" ,"Brocoli","Croustilles sans OGM","Crème glacée","Poutine déjeuner"]]
+ x * @example [["Quel est le meilleur aliment pour votre santé?", 1, "https://www.google.ca" ,"Brocoli","Croustilles sans OGM","Crème glacée","Poutine déjeuner"]]
   */
 var questionsQuiz = [[]];
 
@@ -86,7 +86,10 @@ var questionsQuiz = [[]];
  */
 function choisirQuestions()
 {
-
+  for (var i = 0; i < MAX_QUESTIONS+2; i++) 
+  {
+    questionsQuiz[i] = tableauQuestions[Math.floor((Math.random() * 9) + 0)];
+  }
 }
 
 /**
@@ -100,6 +103,16 @@ function init()
   document.getElementById("boiteChoix").addEventListener("click",majNoQuestionCourant,false);
   document.getElementById("boiteChoix").addEventListener("click",majTexteChoix,false);
   document.getElementById("boiteChoix").addEventListener("click",majTexteQuestion,false);
+  document.getElementById("boiteChoix").addEventListener("click",validerQuestion,false);
+  document.getElementById("boiteChoix").addEventListener("click",obtenirPointage,false);
+  document.getElementById("btnChoix1").addEventListener("click",obtenirChoix1,false);
+  document.getElementById("btnChoix2").addEventListener("click",obtenirChoix2,false);
+  document.getElementById("btnChoix3").addEventListener("click",obtenirChoix3,false);
+  document.getElementById("btnChoix4").addEventListener("click",obtenirChoix4,false);
+  document.getElementById("buttonChangeTxt").addEventListener("click", choisirQuestions,false);
+
+
+
 }
 
 window.onload = init;
