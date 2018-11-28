@@ -16,13 +16,15 @@
 function validerQuestion(noQuestion, choixUtilisateur)
 {
 	
-	if( reponseUtilisateur == tableauQuestions[questionCourante-1][1])
+	if( reponseUtilisateur == questionsQuiz[questionCourante-1][1])
 	{
 		ajouterPoint();
 	}
 	else
 	{
-		window.prompt("pour plus d'infromation veuiller visiter le site web suivant:",tableauQuestions[questionCourante-1][2])
+		window.prompt("Mauvaise réponse ! Pour plus d'infromation veuiller visiter le site web suivant:",tableauQuestions[questionCourante-1][2])
+	//$("#modalReponse").modal();
+
 	}
 }
 
@@ -57,10 +59,7 @@ function obtenirPointage()
  */
 function estFinPartie(questionCourante)
 {
-var finPartie = false;
-
-if(questionCourante == MAX_QUESTIONS ){
-finDePartie = true;
+	window.alert("Fin de la partie !");
 }
 
 /**
@@ -69,8 +68,7 @@ finDePartie = true;
  */
 function chargerQuestionSuivante()
 {
-	document.getElementById("texteQuestion").textContent = tableauQuestions[0][0];
-	document.getElementById("boitesChoix").style.display = "block";
+	//ajouter votre code ici
 }
 
 /**
@@ -143,10 +141,10 @@ function majTotalQuestion()
  */
 function majTexteChoix(noQuestion)
 {	
-	document.getElementById('txtChoix0').textContent = tableauQuestions[questionCourante][3];
-	document.getElementById('txtChoix1').textContent = tableauQuestions[questionCourante][4];
-	document.getElementById('txtChoix2').textContent = tableauQuestions[questionCourante][5];
-	document.getElementById('txtChoix3').textContent = tableauQuestions[questionCourante][6];
+	document.getElementById('txtChoix0').textContent = questionsQuiz[questionCourante][3];
+	document.getElementById('txtChoix1').textContent = questionsQuiz[questionCourante][4];
+	document.getElementById('txtChoix2').textContent = questionsQuiz[questionCourante][5];
+	document.getElementById('txtChoix3').textContent = questionsQuiz[questionCourante][6];
 }
 
 /**
@@ -156,7 +154,7 @@ function majTexteChoix(noQuestion)
  */
 function majTexteQuestion(noQuestion)
 {
-	document.getElementById('texteQuestion').textContent = tableauQuestions[questionCourante][0];
+	document.getElementById('texteQuestion').textContent = questionsQuiz[questionCourante][0];
 	document.getElementById("container").style.display = "block";
 	$('#texteQuestion').removeClass('animated bounceInLeft delay-1s');
 	$('#texteQuestion').removeClass('animated wobble delay-2s');
@@ -169,12 +167,17 @@ function majTexteQuestion(noQuestion)
  */
 function majNoQuestionCourant()
 {	
+	
 	if (questionCourante < (MAX_QUESTIONS))
 	{ 
 		questionCourante++;
 	}
+	else
+	{
+		estFinPartie();
+	}
 	document.getElementById("noQuestionCourante").textContent = questionCourante;
-
+	
 }
 
 /**
