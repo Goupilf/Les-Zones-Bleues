@@ -67,7 +67,7 @@ var tableauQuestions =
   ["Les végétaux représentent quel pourcentage de l’alimentation de ces centenaires?",1,"https://mondenaturel.ca/les-principes-de-longevite-des-zones-bleues/","95%","80%","50%","100%"],
   ["Quel produit ne fait pas parti des aliments des Zones bleues?",4,"https://www.selection.ca/sante/maigrir/le-regime-des-zones-bleues-le-secret-de-la-longevite/","Chocolat noir","le poisson","le café","bière"],
   ["Dans les zones bleues, on consomme seulement _____ calories, comparé à la moyenne mondiale de 2358.",2,"https://www.masantenaturelle.com/chroniques/chroniques2/centenaires_zone-bleue.php","2000","1900","1500","2200"],
-  ["Dans quel état des États-Unis se trouve une des zones bleues?]",3,"https://www.predical.fr/quel-est-le-secret-des-zones-bleues/","New-York","Massachusetts","Californie","Ohio"],
+  ["Dans quel état des États-Unis se trouve une des zones bleues?",3,"https://www.predical.fr/quel-est-le-secret-des-zones-bleues/","New-York","Massachusetts","Californie","Ohio"],
   ["À quelle fréquence les habitants des zones bleues mangent-ils une portion de viande?",3,"http://www.slate.fr/story/100317/centenaire-alimentation-zones-bleues","3 fois/mois","10 fois/mois","5 fois/mois","15 fois/mois"],
 ];
 
@@ -79,17 +79,37 @@ var tableauQuestions =
  x * @example [["Quel est le meilleur aliment pour votre santé?", 1, "https://www.google.ca" ,"Brocoli","Croustilles sans OGM","Crème glacée","Poutine déjeuner"]]
   */
 var questionsQuiz = [[]];
-
+  
 /**
  * @name choisirQuestions
  * @description Prend MAX_QUESTIONS de questions de tableauQuestions pour les mettre dans questionsQuiz.
  */
 function choisirQuestions()
 {
+  shuffle(myArray);
   for (var i = 0; i < MAX_QUESTIONS+2; i++) 
   {
-    questionsQuiz[i] = tableauQuestions[Math.floor((Math.random() * 9) + 0)];
+    var indexArray = myArray[i];
+    questionsQuiz[i]= tableauQuestions[indexArray];
   }
+}
+const myArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+function shuffle(arra1) 
+{
+    var ctr = arra1.length, temp, index;
+
+// While there are elements in the array
+    while (ctr > 0) {
+// Pick a random index
+        index = Math.floor(Math.random(1) * ctr);
+// Decrease ctr by 1
+        ctr--;
+// And swap the last element with it
+        temp = arra1[ctr];
+        arra1[ctr] = arra1[index];
+        arra1[index] = temp;
+    }
+    return arra1;
 }
 
 /**
@@ -109,7 +129,7 @@ function init()
   document.getElementById("btnChoix2").addEventListener("click",obtenirChoix2,false);
   document.getElementById("btnChoix3").addEventListener("click",obtenirChoix3,false);
   document.getElementById("btnChoix4").addEventListener("click",obtenirChoix4,false);
-  document.getElementById("buttonChangeTxt").addEventListener("click", choisirQuestions,false);
+  document.getElementById("buttonChangeTxt").addEventListener("mouseover", choisirQuestions,false);
 
 
 
