@@ -12,13 +12,17 @@
  * @param {*} choixUtilisateur choix fait par l'utilisateur
  * @returns true si la réponse choisie est bonne, sinon false
  */
- 
+
 function validerQuestion(noQuestion, choixUtilisateur)
-{	
-	 var isValider = true;
-	if(choixUtilisateur == tableauQuestions[questionCourante][2])
+{
+	
+	if( reponseUtilisateur == tableauQuestions[questionCourante-1][1])
 	{
-		isValider = true;
+		ajouterPoint();
+	}
+	else
+	{
+		window.prompt("pour plus d'infromation veuiller visiter le site web suivant:",tableauQuestions[questionCourante-1][2])
 	}
 }
 
@@ -31,7 +35,7 @@ function validerQuestion(noQuestion, choixUtilisateur)
  */
 function ajouterPoint()
 {
-	totalpointage++;
+	totalPointage++;
 }
 
 /**
@@ -41,7 +45,8 @@ function ajouterPoint()
  */
 function obtenirPointage()
 {
-	return totalpointage;
+	document.getElementById("totalPoints").textContent = totalPointage;
+
 }
 
 /**
@@ -52,10 +57,7 @@ function obtenirPointage()
  */
 function estFinPartie(questionCourante)
 {
-	var finPartie = false;
-
-if(questionCourante == MAX_QUESTION){
-finDePartie = true;
+	//ajouter votre code ici
 }
 
 /**
@@ -64,7 +66,7 @@ finDePartie = true;
  */
 function chargerQuestionSuivante()
 {
-	
+	//ajouter votre code ici
 }
 
 /**
@@ -84,10 +86,23 @@ function obtenirBonneReponse(noQuestion)
  * @param {*} noQuestion Index de la question pour laquelle il faut obtenir les choix de réponse.
  * @returns retourne un tableau contenant les choix de la question
  */
-function obtenirChoix(noQuestion)
+function obtenirChoix1(noQuestion)
 {
-	//ajouter votre code ici
+	reponseUtilisateur = 1;	
 }
+function obtenirChoix2(noQuestion)
+{
+	reponseUtilisateur = 2;	
+}
+function obtenirChoix3(noQuestion)
+{
+	reponseUtilisateur = 3;	
+}
+function obtenirChoix4(noQuestion)
+{
+	reponseUtilisateur = 4;	
+}
+
 
 /**
  * @name afficherBonneReponse
@@ -139,7 +154,6 @@ function majTexteQuestion(noQuestion)
 {
 	document.getElementById('texteQuestion').textContent = tableauQuestions[questionCourante][0];
 	document.getElementById("container").style.display = "block";
-
 	$('#texteQuestion').removeClass('animated bounceInLeft delay-1s');
 	$('#texteQuestion').removeClass('animated wobble delay-2s');
 	$('#texteQuestion').addClass('animated bounceInLeft delay-1s');
@@ -171,7 +185,7 @@ function remiseAZeroBoutons()
 /**
  * @name majProgression
  * @description Modifie l'interface en ajustant la barre de progression.
- */
+ */	
 function majProgression()
 {
 	//ajouter votre code ici
@@ -202,5 +216,5 @@ function selectionnerChoix(noChoix)
  */
 function afficherBoiteFinDeJeu()
 {
-	//ajouter votre code ici
+	
 }
