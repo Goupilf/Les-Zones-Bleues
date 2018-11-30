@@ -19,11 +19,13 @@ function validerQuestion(noQuestion, choixUtilisateur)
 	if( reponseUtilisateur == questionsQuiz[questionCourante-1][1])
 	{
 		ajouterPoint();
+		jouerSon("successAudio");
 	}
 	else
 	{
 		window.prompt("Mauvaise réponse ! Pour plus d'infromation veuiller visiter le site web suivant:",tableauQuestions[questionCourante-1][2])
 	//$("#modalReponse").modal();
+		jouerSon("errorAudio");
 
 	}
 }
@@ -236,4 +238,9 @@ function selectionnerChoix(noChoix)
 function afficherBoiteFinDeJeu()
 {
 	
+}
+function jouerSon(elementID)
+{
+	var audio = document.getElementById(elementID);
+	audio.play();
 }
