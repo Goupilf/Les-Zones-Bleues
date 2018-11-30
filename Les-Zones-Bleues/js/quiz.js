@@ -59,7 +59,7 @@ function obtenirPointage()
  */
 function estFinPartie(questionCourante)
 {
-	window.alert("Fin de la partie !");
+	document.getElementById("endScreen").textContent = "Fin de la partie";
 }
 
 /**
@@ -141,10 +141,13 @@ function majTotalQuestion()
  */
 function majTexteChoix(noQuestion)
 {	
-	document.getElementById('txtChoix0').textContent = questionsQuiz[questionCourante][3];
-	document.getElementById('txtChoix1').textContent = questionsQuiz[questionCourante][4];
-	document.getElementById('txtChoix2').textContent = questionsQuiz[questionCourante][5];
-	document.getElementById('txtChoix3').textContent = questionsQuiz[questionCourante][6];
+	if(questionCourante <= MAX_QUESTIONS)
+	{
+		document.getElementById('txtChoix0').textContent = questionsQuiz[questionCourante][3];
+		document.getElementById('txtChoix1').textContent = questionsQuiz[questionCourante][4];
+		document.getElementById('txtChoix2').textContent = questionsQuiz[questionCourante][5];
+		document.getElementById('txtChoix3').textContent = questionsQuiz[questionCourante][6];
+	}
 }
 
 /**
@@ -154,8 +157,12 @@ function majTexteChoix(noQuestion)
  */
 function majTexteQuestion(noQuestion)
 {
-	document.getElementById('texteQuestion').textContent = questionsQuiz[questionCourante][0];
 	document.getElementById("container").style.display = "block";
+	if(questionCourante <= MAX_QUESTIONS)
+	{
+		document.getElementById('texteQuestion').textContent = questionsQuiz[questionCourante][0];
+	}
+	
 	$('#texteQuestion').removeClass('animated bounceInLeft delay-1s');
 	$('#texteQuestion').removeClass('animated wobble delay-2s');
 	$('#texteQuestion').addClass('animated bounceInLeft delay-1s');
@@ -167,16 +174,21 @@ function majTexteQuestion(noQuestion)
  */
 function majNoQuestionCourant()
 {	
+	questionCourante++;
 	
-	if (questionCourante < (MAX_QUESTIONS))
+	if (questionCourante <= (MAX_QUESTIONS))
 	{ 
-		questionCourante++;
+
+		document.getElementById("noQuestionCourante").textContent = questionCourante;
+
 	}
 	else
 	{
+		document.getElementById("noQuestionCourante").textContent = questionCourante;
 		estFinPartie();
 	}
-	document.getElementById("noQuestionCourante").textContent = questionCourante;
+	
+	
 	
 }
 
