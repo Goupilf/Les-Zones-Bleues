@@ -52,14 +52,14 @@ var reponseUtilisateur = 0;
 
 /**
   * @global
-  * @name tableauQuestions
+  *  @name tableauQuestions
   * @type {object}
   * @description Liste des questions disponibles pour le quiz.
   * @example [["Quel est le meilleur aliment pour votre santé?", 1, "https://www.google.ca" ,"Brocoli","Croustilles sans OGM","Crème glacée","Poutine déjeuner"]]
   */
 var tableauQuestions = 
 [
-  ["Parmi ces régions, quelle n'est pas considérée comme une zone bleue?",1,"https://fr.wikipedia.org/wiki/Zone_bleue_(long%C3%A9vit%C3%A9)","L'archipel des Galapagos","île japonaise d'Okinawa","l'île grecque d'Ikaria","Péninsule de Nicoya"],
+  ["Parmi ces régions, laquelle n'est pas considérée comme une zone bleue?",1,"https://fr.wikipedia.org/wiki/Zone_bleue_(long%C3%A9vit%C3%A9)","L'archipel des Galapagos","île japonaise d'Okinawa","l'île grecque d'Ikaria","Péninsule de Nicoya"],
   ["Quelle est l'origine du nom « zone bleue »?",3,"https://fr.wikipedia.org/wiki/Zone_bleue_(long%C3%A9vit%C3%A9)","Canadienne","Chinoise","Italienne","Française"],
   ["Qu'est-ce que le climat de ces zones bleues a en commun ? Ce sont des zones :",3,"https://fr.wikipedia.org/wiki/Zone_bleue_(long%C3%A9vit%C3%A9)","sec et aride","humide et tropical","ensoleillée et aérées","froid et sec"],
   ["Parmi ces leçons de longévité, laquelle est fausse?",4,"https://www.lesoleil.com/chroniques/marc-allard/les-zones-bleues-915f84a881b8435985b606617670fa2c","Bougez naturellement","Buvez du vin (modérément)","Boudez la viande et les produits raffinés","Dormir moins de 8h"],
@@ -120,16 +120,19 @@ function init()
 {
   document.getElementById("buttonChangeTxt").addEventListener("click", majTexteQuestion, false);
   document.getElementById("buttonChangeTxt").addEventListener("click", majTexteChoix, false);
+  document.getElementById("buttonChangeTxt").addEventListener("mouseover", choisirQuestions,false);
+
   document.getElementById("boiteChoix").addEventListener("click",majNoQuestionCourant,false);
   document.getElementById("boiteChoix").addEventListener("click",majTexteChoix,false);
   document.getElementById("boiteChoix").addEventListener("click",majTexteQuestion,false);
   document.getElementById("boiteChoix").addEventListener("click",validerQuestion,false);
   document.getElementById("boiteChoix").addEventListener("click",obtenirPointage,false);
+  
   document.getElementById("btnChoix1").addEventListener("click",obtenirChoix1,false);
   document.getElementById("btnChoix2").addEventListener("click",obtenirChoix2,false);
   document.getElementById("btnChoix3").addEventListener("click",obtenirChoix3,false);
   document.getElementById("btnChoix4").addEventListener("click",obtenirChoix4,false);
-  document.getElementById("buttonChangeTxt").addEventListener("mouseover", choisirQuestions,false);
+  
 
 
 
