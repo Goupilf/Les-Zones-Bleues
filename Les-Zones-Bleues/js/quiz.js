@@ -12,7 +12,8 @@
  * @param {*} choixUtilisateur choix fait par l'utilisateur
  * @returns true si la réponse choisie est bonne, sinon false
  */
-
+var bonneRep;
+var bonneRepText;
 function validerQuestion(noQuestion, choixUtilisateur)
 {
 	
@@ -23,8 +24,12 @@ function validerQuestion(noQuestion, choixUtilisateur)
 	}
 	else
 	{
-		window.prompt("Mauvaise réponse ! Pour plus d'infromation veuiller visiter le site web suivant:",tableauQuestions[questionCourante-1][2])
-	//$("#modalReponse").modal();
+		bonneRep = questionsQuiz[questionCourante-1][POS_REPONSE];
+		bonneRepText = bonneRep + 2;
+		document.getElementById("texteReponse").textContent = questionsQuiz[questionCourante-1][bonneRepText];
+		document.getElementById("lienPlusInfos").textContent = questionsQuiz[questionCourante-1][2];
+		document.getElementById("lienPlusInfos").href = questionsQuiz[questionCourante-1][2];
+		$("#modalReponse").modal();
 		jouerSon("errorAudio");
 
 	}
@@ -49,7 +54,7 @@ function ajouterPoint()
  */
 function obtenirPointage()
 {
-	document.getElementById("totalPoints").textContent = totalPointage;
+	document.getElementById("totalPoints").textContent = totalPointage-1;
 
 }
 
@@ -62,6 +67,8 @@ function obtenirPointage()
 function estFinPartie(questionCourante)
 {
 	document.getElementById("endScreen").textContent = "Fin de la partie";
+	afficherBoiteFinDeJeu();
+	
 }
 
 /**
@@ -159,7 +166,7 @@ function majTexteChoix(noQuestion)
  */
 function majTexteQuestion(noQuestion)
 {
-	document.getElementById("container").style.display = "block";
+	
 	if(questionCourante <= MAX_QUESTIONS)
 	{
 		document.getElementById('texteQuestion').textContent = questionsQuiz[questionCourante][0];
@@ -186,7 +193,7 @@ function majNoQuestionCourant()
 	}
 	else
 	{
-		document.getElementById("noQuestionCourante").textContent = questionCourante;
+		
 		estFinPartie();
 	}
 	
@@ -218,7 +225,7 @@ function majProgression()
  */
 function majInterface()
 {
-	//ajouter votre code ici
+	document.getElementById("container").style.display = "block";
 }
 
 /**
@@ -237,10 +244,8 @@ function selectionnerChoix(noChoix)
  */
 function afficherBoiteFinDeJeu()
 {
-	
-}
-function jouerSon(elementID)
-{
-	var audio = document.getElementById(elementID);
-	audio.play();
+
+	document.getElementById("texteQuestion").textContent = "Partie terminée, votre score final est de:";
+	document.getElementById("score final").textContent = totalPointage;
+	document.getElementById("container").style.display = "none";
 }
