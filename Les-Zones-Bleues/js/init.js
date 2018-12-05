@@ -24,7 +24,7 @@ const NB_CHOIX_MAX = 4;
   * @type {number}
   * @description Position de l’index de la bonne réponse.
   */
-const POS_REPONSE = 0;
+const POS_REPONSE = 1;
 
 /**
   * @global
@@ -40,7 +40,7 @@ var questionCourante = 1;
   * @type {number}
   * @description Total du pointage accumulé.
   */
-var totalPointage = 0;
+var totalPointage = 1;
 
 /**
   * @global
@@ -118,20 +118,22 @@ function shuffle(arra1)
  */
 function init() 
 {
-  document.getElementById("buttonChangeTxt").addEventListener("click", majTexteQuestion, false);
-  document.getElementById("buttonChangeTxt").addEventListener("click", majTexteChoix, false);
-  document.getElementById("buttonChangeTxt").addEventListener("mouseover", choisirQuestions,false);
+  document.getElementById("buttonChangeTxt").addEventListener("click",majTexteQuestion, false);
+  document.getElementById("buttonChangeTxt").addEventListener("click",majTexteChoix, false);
+  document.getElementById("buttonChangeTxt").addEventListener("mouseover",choisirQuestions,false);
+  document.getElementById("buttonChangeTxt").addEventListener("click",majInterface,false);
 
   document.getElementById("boiteChoix").addEventListener("click",majNoQuestionCourant,false);
   document.getElementById("boiteChoix").addEventListener("click",majTexteChoix,false);
   document.getElementById("boiteChoix").addEventListener("click",majTexteQuestion,false);
   document.getElementById("boiteChoix").addEventListener("click",validerQuestion,false);
   document.getElementById("boiteChoix").addEventListener("click",obtenirPointage,false);
-  
+
   document.getElementById("btnChoix1").addEventListener("click",obtenirChoix1,false);
   document.getElementById("btnChoix2").addEventListener("click",obtenirChoix2,false);
   document.getElementById("btnChoix3").addEventListener("click",obtenirChoix3,false);
   document.getElementById("btnChoix4").addEventListener("click",obtenirChoix4,false);
+
   
 
 
